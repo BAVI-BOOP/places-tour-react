@@ -1,0 +1,108 @@
+@font-face {
+    font-family: customFonts;
+    src: url(./../../Fonts/aquamarine-Medium/aquamarine_demo.ttf);
+}
+
+* {
+    font-family: customFonts;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body{
+    background-color: #B5E2F8;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 4.5rem;
+}
+
+h3{
+    color: white;
+    font-size: 3.5rem;
+    text-align: left;
+    margin-left: 2rem;
+    transform: translateY(1rem);
+}
+
+.frame {
+    background-color: black;
+    width: 30vw;
+    height: 60vh;
+    border-radius: 5%;
+    min-width: 20rem;
+    overflow: hidden;
+}
+
+
+img {
+    height: 70%;
+    width: 90%;
+    border-radius: 5%;
+    margin-top: 1.5rem;
+    min-width: 18rem;
+}
+
+.desc {
+    bottom: 9.5rem;
+    position: relative;
+    width: 90%;
+    margin-left: 5%;
+    height: 13rem;
+}
+
+.desc p {
+    position: absolute;
+
+}
+
+.desc-hover {
+    color: white;
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    height: 13rem;
+    transform: translateY(13rem);
+    pointer-events: none;
+    visibility: hidden;
+    transition: 1s ;
+    position: absolute;
+    border-radius: 10%;
+}
+
+.desc:hover .desc-hover{
+    transform: translateY(-2.5rem);
+    visibility: visible;
+    background-color: rgba(53, 52, 52, 0.562);
+}
+
+h2{
+    font-size: 6rem;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width:1000px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    html {
+        font-size: 10px;
+    }
+}
