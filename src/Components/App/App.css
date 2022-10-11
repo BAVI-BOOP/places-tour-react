@@ -40,6 +40,7 @@ h3{
     border-radius: 5%;
     min-width: 20rem;
     overflow: hidden;
+    position: relative;
 }
 
 
@@ -52,34 +53,31 @@ img {
 }
 
 .desc {
-    bottom: 9.5rem;
     position: relative;
     width: 90%;
-    margin-left: 5%;
     height: 13rem;
 }
 
 .desc p {
     position: absolute;
-
 }
 
-.desc-hover {
-    color: white;
+.desc{
+    color:white;
     font-size: 2rem;
-    width: 100%;
+    width: 90%;
+    margin-left: 5%;
     text-align: center;
     height: 13rem;
-    transform: translateY(13rem);
     pointer-events: none;
-    visibility: hidden;
     transition: 1s ;
     position: absolute;
     border-radius: 10%;
+    transform: translateY(4rem);
 }
 
-.desc:hover .desc-hover{
-    transform: translateY(-2.5rem);
+.frame:hover .desc{
+    transform: translateY(-100%);
     visibility: visible;
     background-color: rgba(53, 52, 52, 0.562);
 }

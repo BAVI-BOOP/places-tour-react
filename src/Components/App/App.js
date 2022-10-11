@@ -17,9 +17,7 @@ function App() {
               <h3>{item.title}</h3>
               <img key={item.id} src={item.image} alt="selam" />
               <div className="desc">
-              <div className="desc-hover">
-                <p>{item.desc}</p>
-              </div>
+                <p key={item.id}>{item.desc}</p>
               </div>
             </div>
           </div>
